@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.HTMLEditor?>
+
+
+<AnchorPane fx:id="rootMain" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.controller.MainWindowController">
+   <children>
+      <MenuBar layoutX="7.0" layoutY="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="miNew" mnemonicParsing="false" onAction="#miNewOnAction" text="New" />
+                  <MenuItem fx:id="miOpen" mnemonicParsing="false" onAction="#miOpenOnAction" text="Open" />
+                  <MenuItem fx:id="miSave" mnemonicParsing="false" onAction="#miSaveOnAction" text="Save" />
+                  <MenuItem fx:id="miSaveAs" mnemonicParsing="false" onAction="#miSaveAsOnAction" text="Save As" />
+                  <MenuItem fx:id="miPrint" mnemonicParsing="false" onAction="#miPrintOnAction" text="Print" />
+                  <MenuItem fx:id="miExit" mnemonicParsing="false" onAction="#miExitOnAction" text="Exit" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Cut" />
+                  <MenuItem mnemonicParsing="false" text="Copy" />
+                  <MenuItem mnemonicParsing="false" text="Paste" />
+                  <MenuItem mnemonicParsing="false" text="Select All" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem fx:id="miUserGuide" mnemonicParsing="false" onAction="#miUserGuideOnAction" text="User Guide" />
+                  <MenuItem fx:id="miAboutUs" mnemonicParsing="false" onAction="#miAboutUsOnAction" text="About Us" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HTMLEditor htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="6.0" layoutY="27.0" prefHeight="200.0" prefWidth="506.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0" />
+   </children>
+</AnchorPane>
