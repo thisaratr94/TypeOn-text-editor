@@ -6,7 +6,6 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.web.HTMLEditor?>
 
-
 <AnchorPane fx:id="rootMain" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.controller.MainWindowController">
    <children>
       <MenuBar layoutX="7.0" layoutY="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -37,6 +36,6 @@
           </Menu>
         </menus>
       </MenuBar>
-      <HTMLEditor htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" layoutX="6.0" layoutY="27.0" prefHeight="200.0" prefWidth="506.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0" />
+      <HTMLEditor fx:id="htmlEditor" htmlText="" layoutX="6.0" layoutY="27.0" prefHeight="200.0" prefWidth="506.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="27.0" />
    </children>
 </AnchorPane>

@@ -38,6 +38,8 @@ public class FlashScreenController {
         Stage stage = new Stage();
         stage.setScene(mainScene);
         stage.setTitle("TypeOn Text Editor");
+        stage.setResizable(true);
+        stage.setMaximized(true);
         stage.centerOnScreen();
         stage.show();
 
