@@ -22,10 +22,10 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">
             <items>
-              <MenuItem mnemonicParsing="false" text="Cut" />
-                  <MenuItem mnemonicParsing="false" text="Copy" />
-                  <MenuItem mnemonicParsing="false" text="Paste" />
-                  <MenuItem mnemonicParsing="false" text="Select All" />
+              <MenuItem fx:id="miCut" mnemonicParsing="false" onAction="#miCutOnAction" text="Cut" />
+                  <MenuItem fx:id="miCopy" mnemonicParsing="false" onAction="#miCopyOnAction" text="Copy" />
+                  <MenuItem fx:id="miPaste" mnemonicParsing="false" onAction="#miPasteOnAction" text="Paste" />
+                  <MenuItem fx:id="miSelectAll" mnemonicParsing="false" onAction="#miSelectAllOnAction" text="Select All" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">

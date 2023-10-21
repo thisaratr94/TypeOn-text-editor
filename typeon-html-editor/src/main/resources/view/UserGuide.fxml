@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane fx:id="rootUserGuide" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="748.0" prefWidth="554.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.controller.UserGuideController">
+  <content>
+    <AnchorPane fx:id="rootAnchorPane" maxWidth="1.7976931348623157E308" minHeight="0.0" minWidth="0.0" prefHeight="520.0" prefWidth="786.0">
+         <children>
+            <ImageView fitHeight="80.0" fitWidth="200.0" layoutX="200.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/TypeOn-logo-transparent.png" />
+               </image>
+            </ImageView>
+            <VBox fx:id="rootVBox" layoutX="93.0" layoutY="92.0" prefHeight="491.0" prefWidth="776.0" AnchorPane.bottomAnchor="-189.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="92.0">
+               <children>
+                  <Label maxWidth="1.7976931348623157E308" text="User Guide" wrapText="true">
+                     <font>
+                        <Font name="System Bold" size="20.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="20.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="10.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label maxWidth="1.7976931348623157E308" text="Welcome to Type-On, your reliable HTML editor. This user guide will walk you through the key features and functionalities of Type-On to help you create and edit HTML documents with ease." wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label maxWidth="1.7976931348623157E308" text="1. Download and install &quot;Type-On&quot; on your computer." wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label maxWidth="1.7976931348623157E308" text="2. Open the application, create a new project, and start coding in HTML. You can use the built-in code editor." wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label maxWidth="1.7976931348623157E308" text="3. Use HTML tags to create elements (e.g., &lt;p&gt; for paragraphs, &lt;h1&gt; for headings)." wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label maxWidth="1.7976931348623157E308" text="4. Nest elements inside each other to structure your page." wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label maxWidth="1.7976931348623157E308" text="5. To nest elements, place one element inside another (e.g., &lt;div&gt;&lt;p&gt;This is a paragraph.&lt;/p&gt;&lt;/div&gt;)." wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label maxWidth="1.7976931348623157E308" text="6. Some elements can have attributes (e.g., &lt;img src=&quot;image.jpg&quot; alt=&quot;An Image&quot;&gt;)." wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label maxWidth="1.7976931348623157E308" text="7. Add attributes within the opening tag to provide extra information." wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label maxWidth="1.7976931348623157E308" text="8. Add CSS styles directly within your HTML file using &lt;style&gt; tags." wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label maxWidth="1.7976931348623157E308" text="9. Create a separate CSS file and link it to your HTML using the &lt;link&gt; tag." wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label maxWidth="1.7976931348623157E308" text="10. Keep your styles organized in an external stylesheet." wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label maxWidth="1.7976931348623157E308" text="11. Use CSS to make your web page responsive to different screen sizes." wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label maxWidth="1.7976931348623157E308" text="12. Regularly save your work within Type-On to avoid data loss." wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label maxWidth="1.7976931348623157E308" text="13. When your project is ready, export it as an HTML file." wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label maxWidth="1.7976931348623157E308" text="14. Choose a location to save the HTML file on your computer." wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="25.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label maxWidth="1.7976931348623157E308" text="Congratulations! You now have a solid understanding of Type-On and are ready to create, edit, and manage HTML documents with confidence. Experiment, explore, and bring your web development projects to life with this powerful tool." wrapText="true">
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

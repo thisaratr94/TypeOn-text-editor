@@ -29,6 +29,10 @@ public class MainWindowController {
     public MenuItem miPrint;
     public MenuItem miExit;
     public HTMLEditor htmlEditor;
+    public MenuItem miCut;
+    public MenuItem miCopy;
+    public MenuItem miPaste;
+    public MenuItem miSelectAll;
 
     public void initialize() {
 
@@ -40,7 +44,7 @@ public class MainWindowController {
         Scene mainScene = new Scene(rootMain);
         Stage stage = new Stage();
         stage.setScene(mainScene);
-        stage.setTitle("TypeOn Text Editor");
+        stage.setTitle("TypeOn HTML Editor");
         stage.setResizable(true);
         stage.setMaximized(true);
         stage.centerOnScreen();
@@ -49,9 +53,9 @@ public class MainWindowController {
 
     public void miOpenOnAction(ActionEvent actionEvent) {
         FileChooser fileChooser = new FileChooser();
-        fileChooser.setInitialDirectory(new File("/"));
-        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Text Files","*.txt"));
-        fileChooser.setTitle("Select a text file");
+        fileChooser.setInitialDirectory(new File("/home"));
+        fileChooser.getExtensionFilters().add(new FileChooser.ExtensionFilter("Text Files","*.txt","*.html"));
+        fileChooser.setTitle("Select a html file");
 
         File textFile = fileChooser.showOpenDialog(rootMain.getScene().getWindow());
 
@@ -68,7 +72,7 @@ public class MainWindowController {
 //
 //            String content = "";
 //            while ((bis.readLine()) != null) {
-//                content += bis.readLine() + "\n";
+//                content += bis.readLine() + "<br>";
 //            }
 //            htmlEditor.setHtmlText(content);
 //
@@ -134,5 +138,17 @@ public class MainWindowController {
 
     public void miExitOnAction(ActionEvent actionEvent) {
         System.exit(0);
+    }
+
+    public void miCutOnAction(ActionEvent actionEvent) {
+    }
+
+    public void miCopyOnAction(ActionEvent actionEvent) {
+    }
+
+    public void miPasteOnAction(ActionEvent actionEvent) {
+    }
+
+    public void miSelectAllOnAction(ActionEvent actionEvent) {
     }
 }

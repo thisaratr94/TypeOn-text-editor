@@ -17,7 +17,7 @@ public class AppInitializer extends Application {
 
     @Override
     public void start(Stage primaryStage) throws  Exception {
-        AnchorPane splashRoot = FXMLLoader.load(getClass().getResource("/view/FlashScreen.fxml"));
+        AnchorPane splashRoot = FXMLLoader.load(getClass().getResource("/view/SplashScreen.fxml"));
         Scene splashScene = new Scene(splashRoot);
 
         primaryStage.initStyle(StageStyle.TRANSPARENT);

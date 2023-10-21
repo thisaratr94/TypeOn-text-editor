@@ -1,4 +1,4 @@
-# TypeOn Text Editor
+# TypeOn HTML Editor
 
 ### Version
 0.1.0

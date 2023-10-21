@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootAboutUs" prefHeight="618.0" prefWidth="402.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.controller.AboutUsController">
+   <children>
+      <AnchorPane fx:id="rootPane" layoutX="11.0" layoutY="13.0" onMouseDragged="#rootPaneOnMouseDragged" onMousePressed="#rootPaneOnMousePressed" prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="ivNotice" fitHeight="609.0" fitWidth="439.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../asset/notice.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="btnX" layoutX="377.0" layoutY="29.0" mnemonicParsing="false" onAction="#btnXOnAction" prefHeight="30.0" prefWidth="35.0" style="-fx-background-color: white;" text="X">
+               <font>
+                  <Font name="System Bold" size="17.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="103.0" fitWidth="241.0" layoutX="-19.0" layoutY="-4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../asset/TypeOn-logo.png" />
+               </image>
+            </ImageView>
+            <Label alignment="TOP_CENTER" layoutX="44.0" layoutY="179.0" prefHeight="55.0" prefWidth="328.0" text="Are you ready to dive into the exciting world of web development and create stunning web pages with ease? " textAlignment="JUSTIFY" wrapText="true" />
+            <Label alignment="TOP_CENTER" layoutX="42.0" layoutY="236.0" prefHeight="73.0" prefWidth="328.0" text="Look no further, as we proudly present      &quot;Type-On&quot; – your all-in-one HTML editor application designed to empower your web design journey." textAlignment="JUSTIFY" wrapText="true" />
+            <Label alignment="TOP_CENTER" layoutX="42.0" layoutY="315.0" prefHeight="103.0" prefWidth="328.0" text="&quot;Type-On&quot; is your gateway to the captivating world of web development. Whether you're building a personal blog, a professional website, or just experimenting with HTML, we've got you covered. Experience the joy of creating web content with ease, precision, and style." textAlignment="JUSTIFY" wrapText="true" />
+            <Label alignment="CENTER" layoutX="136.0" layoutY="97.0" prefHeight="36.0" prefWidth="140.0" style="-fx-background-color: lightblue; -fx-background-radius: 15px;" text="About Us">
+               <font>
+                  <Font name="Dyuthi Regular" size="26.0" />
+               </font>
+            </Label>
+            <Label alignment="TOP_CENTER" layoutX="44.0" layoutY="423.0" prefHeight="91.0" prefWidth="189.0" text="Unlock your web design potential today with &quot;Type-On.&quot; Your journey to becoming a web developer starts here." textAlignment="JUSTIFY" wrapText="true" />
+            <Label layoutX="40.0" layoutY="533.0" prefHeight="44.0" prefWidth="198.0" text="© 2023 Thisara Rathnapala. All Rights Reserved." wrapText="true">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
