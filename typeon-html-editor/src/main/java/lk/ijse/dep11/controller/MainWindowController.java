@@ -1,5 +1,6 @@
 package lk.ijse.dep11.controller;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -10,6 +11,7 @@ import javafx.scene.layout.Background;
 import javafx.scene.paint.Color;
 import javafx.scene.web.HTMLEditor;
 import javafx.stage.FileChooser;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
 
@@ -35,7 +37,13 @@ public class MainWindowController {
     public MenuItem miSelectAll;
 
     public void initialize() {
-
+        Platform.runLater(() -> {
+            Stage stage = (Stage) rootMain.getScene().getWindow();
+            stage.setOnCloseRequest(e -> {
+                e.consume();
+                miExit.fire();
+            });
+        });
     }
 
     public void miNewOnAction(ActionEvent actionEvent) throws Exception {
@@ -136,8 +144,14 @@ public class MainWindowController {
     public void miPrintOnAction(ActionEvent actionEvent) {
     }
 
-    public void miExitOnAction(ActionEvent actionEvent) {
-        System.exit(0);
+    public void miExitOnAction(ActionEvent actionEvent) throws IOException {
+
+        Stage stage = new Stage();
+        stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/ExitWindow.fxml"))));
+        stage.initModality(Modality.APPLICATION_MODAL);
+        stage.setTitle("Exit");
+        stage.centerOnScreen();
+        stage.show();
     }
 
     public void miCutOnAction(ActionEvent actionEvent) {

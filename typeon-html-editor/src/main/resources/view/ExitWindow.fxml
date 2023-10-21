@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="165.0" prefWidth="421.0" style="-fx-background-color: lightblue;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep11.controller.ExitWindowController">
+   <children>
+      <Label alignment="CENTER" layoutX="64.0" layoutY="25.0" prefHeight="33.0" prefWidth="293.0" style="-fx-background-color: white;" text="Are you sure you want to Exit?">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnCancel" layoutX="132.0" layoutY="102.0" mnemonicParsing="false" onAction="#btnCancel" text="CANCEL" AnchorPane.leftAnchor="120.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnExit" layoutX="254.0" layoutY="102.0" mnemonicParsing="false" onAction="#btnExitOnAction" prefHeight="24.0" prefWidth="76.0" text="EXIT" AnchorPane.rightAnchor="120.0">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
